@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Other page</a>
+    </nav>
+    <main>
+      <h1>My other page</h1>
+    </main>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+     <style>
+       
+       @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #4158d0;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+       
+
+     </style>
+      <meta charset="utf-8">
+      <title>RamlikithJaykar | RJ3:16</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About of RJ3:16</a></li>
+            <li><a href="#">Instagram </a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">E-mail</a></li>
+         </ul>
+      </div>
+      <div class="content">
+         <div class="title">
+          ᏒᏗᎷᏝᎥᏦᎥᏖᏂ ᏠᏗᎩᏦᏗᏒ</div>
+         <p>
+            RJ:316 Labs
+         </p>
+         <p>
+          @𝓻𝓪𝓶𝓵𝓲𝓴𝓲𝓽𝓱𝓳𝓪𝔂𝓴𝓪𝓻(💓𝔀💓) 𝓻𝓪𝓶👫🌍 𝓦𝓮𝓵𝓬𝓸𝓶𝓮_ 𝓽𝓸 𝓶𝔂 𝔀𝓸𝓻𝓵𝓭..🌍 @𝓽𝓽𝓲𝓽𝓾𝓭𝓮_- 𝓵𝓸𝓿𝓮𝓻# $-𝓶𝔂 𝓺𝓾𝓮𝓮𝓷 𝓛𝓲𝓴𝓲𝓽𝓱𝓪👸 𝓖𝓸𝓸𝓭 - 𝓯𝓸𝓻- 𝓰𝓸𝓸𝓭 #,𝓫𝓪𝓭- 𝓯𝓸𝓻- 𝓫𝓪𝓭 # 𝓳𝓪𝔂𝓴𝓪𝓻 > 𝓘𝓘𝓣 𝓑𝓸𝓶𝓑𝓪𝔂
+          HYD..
+         </p>
+      </div>
+   </body>
+</html>
